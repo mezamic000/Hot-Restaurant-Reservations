@@ -10,6 +10,28 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+//Tables Array
+var tables = [
+    {
+       name: "Ashley", 
+       phone: "555-555-5555",
+       email: "ashley@example.com",
+       id: "ashley-01"
+    },
+    {
+        name: "Michelle", 
+        phone: "555-555-5555", 
+        email: "michelle@example.com",
+        id: "michelle-01"
+    },
+    {
+        name: "Tashona",
+        phone: "555-555-5555",
+        email: "tashona@example.com",
+        id: "tashona-01"
+    }
+]
+
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
 });
